@@ -103,9 +103,12 @@
         _label2.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label2];
         _label2.text = LocalString(@"App software version: V2.0.1 for iOS");
-        
+        //自动折行设置
+        [_label2 setLineBreakMode:NSLineBreakByWordWrapping];
+        _label2.numberOfLines = 0;
+        _label2.textAlignment = NSTextAlignmentLeft;
         [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(300/WScale, 21/HScale));
+            make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
             make.left.equalTo(self.view.mas_left).offset(30/HScale);
             make.top.equalTo(self.label1.mas_bottom).offset(30/HScale);
         }];
@@ -122,9 +125,11 @@
         _label3.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label3];
         _label3.text = [NSString stringWithFormat:@"%@: V%d.%d.%d.%d",LocalString(@"Robot software version"),_bluetoothDataManage.deviceType,_bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
-        
+        [_label3 setLineBreakMode:NSLineBreakByWordWrapping];
+        _label3.numberOfLines = 0;
+        _label3.textAlignment = NSTextAlignmentLeft;
         [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(300/WScale, 21/HScale));
+            make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
             make.left.equalTo(self.view.mas_left).offset(30/HScale);
             make.top.equalTo(self.label2.mas_bottom).offset(30/HScale);
         }];
@@ -135,4 +140,5 @@
 - (void)getVersion{
     _label3.text = [NSString stringWithFormat:@"%@: V%d.%d.%d",LocalString(@"Robot software version"), _bluetoothDataManage.version1,_bluetoothDataManage.version2,_bluetoothDataManage.version3];
 }
+
 @end
