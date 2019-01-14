@@ -71,6 +71,20 @@
 {
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveAeraMessage:) name:@"recieveAeraMessage" object:nil];
+    
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x1d];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

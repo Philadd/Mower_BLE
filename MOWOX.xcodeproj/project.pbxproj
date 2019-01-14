@@ -203,9 +203,9 @@
 		BBB6112C2019B1F3007FA3D4 /* 120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */; };
 		BBC4AB802102D8C100F49BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */; };
 		BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4592019B84C00423650 /* 80x80@2x.png */; };
-		BBCCA45D2019C55100423650 /* launchImage1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45C2019C55100423650 /* launchImage1@2x.png */; };
-		BBCCA4602019C71F00423650 /* launchImage1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */; };
-		BBCCA4612019C71F00423650 /* launchImage1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */; };
+		BBCCA45D2019C55100423650 /* LaunchScreen1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45C2019C55100423650 /* LaunchScreen1@2x.png */; };
+		BBCCA4602019C71F00423650 /* LaunchScreen1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* LaunchScreen1_5.5@2x.png */; };
+		BBCCA4612019C71F00423650 /* LaunchScreen1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* LaunchScreen1_4.7@2x.png */; };
 		BBFD38902079ACB500D02ACD /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */; };
 /* End PBXBuildFile section */
 
@@ -551,9 +551,9 @@
 		BBC4AB812102D9FC00F49BDC /* AssetRobot.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetRobot.xcassets; sourceTree = "<group>"; };
 		BBC4AB8321030F5E00F49BDC /* LaunchScreenRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenRobot.storyboard; sourceTree = "<group>"; };
 		BBCCA4592019B84C00423650 /* 80x80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80x80@2x.png"; sourceTree = "<group>"; };
-		BBCCA45C2019C55100423650 /* launchImage1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1@2x.png"; sourceTree = "<group>"; };
-		BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_5.5@2x.png"; sourceTree = "<group>"; };
-		BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage1_4.7@2x.png"; sourceTree = "<group>"; };
+		BBCCA45C2019C55100423650 /* LaunchScreen1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen1@2x.png"; sourceTree = "<group>"; };
+		BBCCA45E2019C71F00423650 /* LaunchScreen1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen1_5.5@2x.png"; sourceTree = "<group>"; };
+		BBCCA45F2019C71F00423650 /* LaunchScreen1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen1_4.7@2x.png"; sourceTree = "<group>"; };
 		BBCD5967215F548300D87D31 /* MOWOXROBOT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOXROBOT.entitlements; sourceTree = "<group>"; };
 		BBCD5968215F55C600D87D31 /* MOWOX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOX.entitlements; sourceTree = "<group>"; };
 		BBFD388E2079ACB500D02ACD /* UIViewController+BarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
@@ -1115,9 +1115,9 @@
 			isa = PBXGroup;
 			children = (
 				BB479EE8208D6F9200B19D6A /* new */,
-				BBCCA45F2019C71F00423650 /* launchImage1_4.7@2x.png */,
-				BBCCA45E2019C71F00423650 /* launchImage1_5.5@2x.png */,
-				BBCCA45C2019C55100423650 /* launchImage1@2x.png */,
+				BBCCA45F2019C71F00423650 /* LaunchScreen1_4.7@2x.png */,
+				BBCCA45E2019C71F00423650 /* LaunchScreen1_5.5@2x.png */,
+				BBCCA45C2019C55100423650 /* LaunchScreen1@2x.png */,
 				BBCCA4592019B84C00423650 /* 80x80@2x.png */,
 				BBB611292019B1F3007FA3D4 /* 60x60@2x.png */,
 				BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */,
@@ -1236,7 +1236,7 @@
 				3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */,
 				BBB611252019B111007FA3D4 /* 120x120@2x.png in Resources */,
 				3E1480511FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png in Resources */,
-				BBCCA4602019C71F00423650 /* launchImage1_5.5@2x.png in Resources */,
+				BBCCA4602019C71F00423650 /* LaunchScreen1_5.5@2x.png in Resources */,
 				3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */,
 				3EE3DC481FA8B2BE0049B8F7 /* 右转@2x.png in Resources */,
 				BB479EFA208D6F9200B19D6A /* 180*180@3x.png in Resources */,
@@ -1276,7 +1276,7 @@
 				3E5815C01FAFF72300E93520 /* WorkingtimeSetting@1x.png in Resources */,
 				BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */,
 				3EA7AE061FB14B87001FB406 /* backgroundro@1x.png in Resources */,
-				BBCCA4612019C71F00423650 /* launchImage1_4.7@2x.png in Resources */,
+				BBCCA4612019C71F00423650 /* LaunchScreen1_4.7@2x.png in Resources */,
 				3EA7AE051FB14B87001FB406 /* backgroundco@2x.png in Resources */,
 				3EF771A91FAAA38A00EC016A /* left@1x.png in Resources */,
 				36013BF721BE169500358D86 /* DY00243_20181210.bin in Resources */,
@@ -1290,7 +1290,7 @@
 				3E22E2A51FA9A7B8000BC792 /* wifi@2x.png in Resources */,
 				BB0A37B02015944D00E5FD94 /* A1_50@2x.png in Resources */,
 				3EFEF5061FADA83E00FA7850 /* 蓝牙@1x.png in Resources */,
-				BBCCA45D2019C55100423650 /* launchImage1@2x.png in Resources */,
+				BBCCA45D2019C55100423650 /* LaunchScreen1@2x.png in Resources */,
 				3E6325571FA6D8F000F14462 /* 未选中@1x.png in Resources */,
 				3E43AD2B1FAAED0500924616 /* 倒三角@1x.png in Resources */,
 				3E63255E1FA6F8C500F14462 /* 选中@2x.png in Resources */,

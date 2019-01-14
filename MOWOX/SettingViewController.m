@@ -33,7 +33,7 @@
 
 @implementation SettingViewController
 
-static int version = 243;
+static int version = 246;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,10 +43,10 @@ static int version = 243;
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
-    if ([BluetoothDataManage shareInstance].versionupdate < version) {
-        _updateButton.hidden = NO;
-    }else{
+    if ([BluetoothDataManage shareInstance].versionupdate >= version) {
         _updateButton.hidden = YES;
+    }else{
+        _updateButton.hidden = NO;
     }
 
     //分区按钮显示
