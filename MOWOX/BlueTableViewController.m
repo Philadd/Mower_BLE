@@ -103,7 +103,7 @@
             }
         }
     }];
-    
+    //
     //设置设备连接成功的委托,同一个baby对象，使用不同的channel切换委托回调
     [self.baby setBlockOnConnectedAtChannel:channelOnPeropheralView block:^(CBCentralManager *central, CBPeripheral *peripheral) {
         [SVProgressHUD showSuccessWithStatus:LocalString(@"Device Connection Successful")];
