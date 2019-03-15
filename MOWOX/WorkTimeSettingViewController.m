@@ -240,7 +240,7 @@ static CGFloat cellHeight = 45.0;
         frame.size.height = 30.0f;
         inputAccessoryView.frame = frame;
         
-        UIBarButtonItem * doneBtn = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
+        UIBarButtonItem * doneBtn = [[UIBarButtonItem alloc]initWithTitle:LocalString(@"Done") style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
         [doneBtn setTintColor:[UIColor grayColor]];
         
         UIBarButtonItem *flexibleSpaceLeft = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
