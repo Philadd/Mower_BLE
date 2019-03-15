@@ -199,11 +199,24 @@
         make.top.equalTo(self.curVerTV.mas_bottom);
         make.centerX.equalTo(self.view.mas_centerX);
     }];
-    [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.15));
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.top.equalTo(self.tipImage.mas_bottom);
-    }];
+    //自动折行设置
+    [_tipLabel setLineBreakMode:NSLineBreakByWordWrapping];
+    _tipLabel.numberOfLines = 0;
+    _tipLabel.textAlignment = NSTextAlignmentCenter;
+    if (UI_IS_IPHONE5) {
+        
+        [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.20));
+            make.centerX.equalTo(self.view.mas_centerX);
+            make.top.equalTo(self.tipImage.mas_bottom);
+        }];
+    }else{
+        [_tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, ScreenHeight * 0.15));
+            make.centerX.equalTo(self.view.mas_centerX);
+            make.top.equalTo(self.tipImage.mas_bottom);
+        }];
+    }
     [_progressViewNew mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(ScreenWidth * 0.82, 5.0));
         make.centerX.equalTo(self.view.mas_centerX);
