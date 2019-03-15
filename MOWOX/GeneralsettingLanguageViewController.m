@@ -67,9 +67,8 @@
     [self addLeftBarButtonWithImage:image action:@selector(backAction)];
     
     _languagePicker = [[UIPickerView alloc] init];
-    /*self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
-                                                          NSLocalizedString(@"Polski", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Slovenian", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"France", nil),NSLocalizedString(@"Japanese", nil)]];*/
-    self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),NSLocalizedString(@"Derman", nil),NSLocalizedString(@"Dansk", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Slovak", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"French", nil),NSLocalizedString(@"Bulgaria", nil),NSLocalizedString(@"Suomi", nil),NSLocalizedString(@"Nederlands", nil),NSLocalizedString(@"Lietuvių", nil),NSLocalizedString(@"Romania", nil),NSLocalizedString(@"Norsk", nil),NSLocalizedString(@"Portuguese", nil),NSLocalizedString(@"Svenska", nil),NSLocalizedString(@"Spain", nil),NSLocalizedString(@"Italiano", nil)]];
+    self.languageArray = [NSMutableArray arrayWithArray:@[NSLocalizedString(@"English", nil),
+    NSLocalizedString(@"German", nil),NSLocalizedString(@"Danish", nil),NSLocalizedString(@"Czech", nil),NSLocalizedString(@"Slovak", nil),NSLocalizedString(@"Polish", nil),NSLocalizedString(@"Hungarian", nil),NSLocalizedString(@"Russian", nil),NSLocalizedString(@"French", nil),NSLocalizedString(@"Bulgarian", nil),NSLocalizedString(@"Finnish", nil),NSLocalizedString(@"Dutch", nil),NSLocalizedString(@"Lithuanian", nil),NSLocalizedString(@"Romanian", nil),NSLocalizedString(@"Norwegian", nil),NSLocalizedString(@"Portuguese", nil),NSLocalizedString(@"Swedish", nil),NSLocalizedString(@"Spanish", nil),NSLocalizedString(@"Italian", nil)]];
     self.languagePicker.dataSource = self;
     self.languagePicker.delegate = self;
     [self.languagePicker selectRow:0 inComponent:0 animated:YES];
