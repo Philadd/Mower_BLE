@@ -107,11 +107,6 @@
         [_label2 setLineBreakMode:NSLineBreakByWordWrapping];
         _label2.numberOfLines = 0;
         _label2.textAlignment = NSTextAlignmentLeft;
-        [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
-            make.left.equalTo(self.view.mas_left).offset(30/HScale);
-            make.top.equalTo(self.label1.mas_bottom).offset(30/HScale);
-        }];
         if (UI_IS_IPHONE5) {
             
             [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -142,11 +137,6 @@
         [_label3 setLineBreakMode:NSLineBreakByWordWrapping];
         _label3.numberOfLines = 0;
         _label3.textAlignment = NSTextAlignmentLeft;
-        [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
-            make.left.equalTo(self.view.mas_left).offset(30/HScale);
-            make.top.equalTo(self.label2.mas_bottom).offset(30/HScale);
-        }];
         if (UI_IS_IPHONE5) {
             
             [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
