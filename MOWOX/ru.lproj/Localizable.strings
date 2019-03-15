@@ -164,3 +164,22 @@
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Расстояние (в метрах), которое требуется роботу, чтобы доехать до третьей зоны)";
 
+"English" = "Английский";
+"German" = "Немецкий";
+"Danish" = "Датский";
+"Czech" = "Чешский";
+"Sloan" = "Словакский";
+"Polish" = "Польский";
+"Hungarian" = "Венгерский";
+"Russian" = "Русский";
+"French" = "Французский";
+"Bulgarian" = "Болгарский";
+"Finnish" = "Финский";
+"Dutch" = "Нидерландский";
+"Lithuanian" = "Литовский";
+"Romanian" = "Румынский";
+"Norwegian" = "Норвежский";
+"Portuguese" = "Португальский";
+"Swedish" = "Шведский";
+"Spanish" = "Испанский";
+"Italian" = "Итальянский";

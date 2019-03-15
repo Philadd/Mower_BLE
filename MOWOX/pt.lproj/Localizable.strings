@@ -171,7 +171,25 @@
 "Area3_Dis : ____ m" = "Área2_Dis: ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(A distância (em metros) que o robô precisa para alcançar a terceira área)";
 
-
+"English" = "Inglês";
+"German" = "Alemão";
+"Danish" = "Dinamarquês";
+"Czech" = "Checo";
+"Sloan" = "Eslovaco";
+"Polish" = "Polaco";
+"Hungarian" = "Húngaro";
+"Russian" = "Russo";
+"French" = "Francês";
+"Bulgarian" = "Búlgaro";
+"Finnish" = "Finlandês";
+"Dutch" = "Holandês";
+"Lithuanian" = "Lituano";
+"Romanian" = "Romeno";
+"Norwegian" = "Norueguês";
+"Portuguese" = "Português";
+"Swedish" = "Sueco";
+"Spanish" = "Espanhol";
+"Italian" = "Italiano";
 
 
 

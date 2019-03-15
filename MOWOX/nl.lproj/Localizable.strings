@@ -163,3 +163,23 @@
 "(The proportion of the third area in relation with the entire surface)" = "(De verhoudingen van het derde gebied ten opzichte van het gehele gebied)";
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(De afstand (in meter) die de robot moet afleggen om het derde gebied te bereiken)";
+
+"English" = "Engels";
+"German" =  "Duits";
+"Danish" = "Deens";
+"Czech" = "Tsjechisch";
+"Slovak" = "Slowaaks";
+"Polish" = "Pools";
+"Hungarian" = "Hongaars";
+"Russian" =  "Russisch";
+"French" = "Frans";
+"Bulgarian" = "Bulgaars";
+"Suomi" = "Fins";
+"Dutch" = "Nederlands";
+"Lithuanian" = "Litouws";
+"Romanian" =  "Roemeens";
+"Norwegian" = "Noors";
+"Portuguese" = "Portugees";
+"Swedish" = "Zweeds";
+"Spanish" = "Spaans";
+"Italian" = "Italiaans";

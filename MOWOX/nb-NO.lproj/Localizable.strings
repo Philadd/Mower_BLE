@@ -161,17 +161,37 @@
 "Refresh" = "Oppdater";
 "Device List" = "Enhetsliste";
 "Second area" = "Sekundært område";
-"Area2_Per : ____ %" = "Område2_Per: ____ %";
+"Area2_Per : ____ %" = "Area2_Per : ____ %";
 "(The proportion of the second area in relation with the entire surface)" = "(Dimensjon på det sekundære området i forhold til hele overflaten)";
-"Area2_Dis : ____ m" = "Område2_Dis: ____ m";
+"Area2_Dis : ____ m" = "Area2_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the second area)" ="(Distansen (i meter) som roboten må nå på det sekundære området)";
 "Third area" = "Tredje område";
-"Area3_Per : ____ %" = "Område3_Per: ____ %";
+"Area3_Per : ____ %" = "Area3_Per : ____ %";
 
 "(The proportion of the third area in relation with the entire surface)" = "(Dimensjon på det tredje området i forhold til hele overflaten)";
-"Area3_Dis : ____ m" = "Område3_Dis: ____ m";
+"Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Distansen (i meter) som roboten må nå på det tredje området)";
 
+"Finish" = "Finsk";
+"English" = "Engelsk";
+"German" = "Tysk";
+"Danish" = "Dansk";
+"Czech" = "Tjekkisk";
+"Sloan" = "Slovakisk";
+"Polish" = "Polsk";
+"Hungarian" = "Ungarsk";
+"Russian" = "Russisk";
+"French" = "Fransk";
+"Bulgarian" = "Bulgarsk";
+"Finnish" = "Finsk";
+"Dutch" = "Nederlandsk";
+"Lithuanian" = "Litauisk";
+"Romanian" = "Rumensk";
+"Norwegian" = "Norsk";
+"Portuguese" = "Portugisisk";
+"Swedish" = "Svensk";
+"Spanish" = "Spansk";
+"Italian" = "Italiensk";
 
 
 

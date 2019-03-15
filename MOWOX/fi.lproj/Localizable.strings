@@ -164,3 +164,23 @@
 "(The proportion of the third area in relation with the entire surface)" = "(Kolmannen alueen koko suhteessa koko pinta-alaan)";
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Robotin etäisyys kolmannesta alueesta metreissä)";
+
+"English" = "englanti";
+"German" = "saksa";
+"Danish" = "tanska";
+"Czech" = "tsekki";
+"Sloan" = "slovakki";
+"Polish" = "puola";
+"Hungarian" = "unkari";
+"Russian" = "venäjä";
+"French" = "ranska";
+"Bulgarian" = "bulgaria";
+"Finnish" = "suomi";
+"Dutch" = "hollanti";
+"Lithuanian" = "liettua";
+"Romanian" = "romania";
+"Norwegian" = "norja";
+"Portuguese" = "portugali";
+"Swedish" = "ruotsi";
+"Spanish" = "espanja";
+"Italian" = "italia";

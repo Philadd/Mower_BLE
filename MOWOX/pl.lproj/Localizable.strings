@@ -151,15 +151,34 @@
 "Refresh" = "Odśwież";
 "Device List" = "Lista urządzeń";
 "Second area" = "Drugi obszar";
-"Area2_Per : ____ %" = "Obszar2_Prop____ %";
+"Area2_Per : ____ %" = "Teren2_Pro:____ %";
 "(The proportion of the second area in relation with the entire surface)" = "(Udział drugiego obszaru w stosunku do całej powierzchni)";
-"Area2_Dis : ____ m" = "Obszar2_Dys:____ m";
+"Area2_Dis : ____ m" = "Teren2_Dys:____ m";
 "(The distance (in meters) that the robot needs to reach the second area)" ="(Odległość (w metrach), którą robot musi osiągnąć, aby dotrzeć do drugiego obszaru)";
 "Third area" = "Trzeci obszar";
-"Area3_Per : ____ %" = "Obszar3_Prop____ %";
+"Area3_Per : ____ %" = "Teren3_Pro:____ %";
 "(The proportion of the third area in relation with the entire surface)" = "(Udział trzeciego obszaru w stosunku do całej powierzchni)";
-"Area3_Dis : ____ m" = "Obszar3_Dys:____ m";
+"Area3_Dis : ____ m" = "Teren3_Dys:____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Odległość (w metrach), którą robot musi osiągnąć, aby dotrzeć do trzeciego obszaru)";
 
+"English" = "angielski";
+"German" = "niemiecki";
+"Danish" = "duński";
+"Czech" = "czeski";
+"Sloan" = "słowacki";
+"Polish" = "polski";
+"Hungarian" = "węgierski";
+"Russian" = "rosyjski";
+"French" = "francuski";
+"Bulgarian" = "bułgarski";
+"Finnish" = "fiński";
+"Dutch" = "holenderski";
+"Lithuanian" = "litewski";
+"Romanian" = "rumuński";
+"Norwegian" = "norweski";
+"Portuguese" = "portugalski";
+"Swedish" = "szwedzki";
+"Spanish" = "hiszpański";
+"Italian" = "włoski";
 
 

@@ -170,3 +170,23 @@
 "(The proportion of the third area in relation with the entire surface)" = "(Proporción de la tercera área en relación a toda la superficie)";
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" = "(La distancia (en metros) que necesita el robot para llegar a la tercera área)";
+
+"English" = "inglés";
+"German" = "alemán";
+"Danish" = "danés";
+"Czech" = "checo";
+"Sloan" = "eslovaco";
+"Polish" = "polaco";
+"Hungarian" = "húngaro";
+"Russian" = "ruso";
+"French" = "francés";
+"Bulgarian" = "búlgaro";
+"Finnish" = "finlandés";
+"Dutch" = "neerlandés";
+"Lithuanian" = "lituano";
+"Romanian" = "rumano";
+"Norwegian" = "noruego";
+"Portuguese" = "portugués";
+"Swedish" = "sueco";
+"Spanish" = "español";
+"Italian" = "italiano";

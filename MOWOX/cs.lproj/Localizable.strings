@@ -9,7 +9,7 @@
 "OK" = "OK";
 "MOW in the rain" = "sekat v dešti";
 "Yes" = "ANO";
-"NO" = "ANO";
+"NO" = "Ne";
 "Boundary cut" = "Hraniční řez";
 
 "Date" = "Datum";
@@ -163,3 +163,23 @@
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Vzdálenost (v metrech), kterou musí robot dosáhnout do třetí oblasti)";
 "numbers" = "čísla";
+
+"English" = "Angličtina";
+"German" =  "Němčina";
+"Danish" = "Dánština";
+"Czech" = "Čeština";
+"Slovak" = "Slovenština";
+"Polish" = "Polština";
+"Hungarian" = "Maďarština";
+"Russian" =  "Ruština";
+"French" = "Francouzština";
+"Bulgarian" = "Bulharština";
+"Suomi" = "Finština";
+"Dutch" = "Holandština";
+"Lithuanian" = "Litevština";
+"Romanian" =  "Rumunština";
+"Norwegian" = "Norština";
+"Portuguese" = "Portugalština";
+"Swedish" = "Švédština";
+"Spanish" = "Španělština";
+"Italian" = "Italština";

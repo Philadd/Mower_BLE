@@ -171,7 +171,26 @@
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Avståndet (i meter) som roboten behöver nå det tredje området)";
 
-
+"Finish" = "Avsluta";
+"English" = "Engelska";
+"German" = "Tyska";
+"Danish" = "Danska";
+"Czech" = "Tjeckiska";
+"Sloan" = "Slovakiska";
+"Polish" = "Polska";
+"Hungarian" = "Ungerska";
+"Russian" = "Ryska";
+"French" = "Franska";
+"Bulgarian" = "Bulgariska";
+"Finnish" = "Finska";
+"Dutch" = "Holländska";
+"Lithuanian" = "Litauiska";
+"Romanian" = "Rumänska";
+"Norwegian" = "Norska";
+"Portuguese" = "Portugisiska";
+"Swedish" = "Svenska";
+"Spanish" = "Spanska";
+"Italian" = "Italienska";
 
 
 

@@ -112,6 +112,20 @@
             make.left.equalTo(self.view.mas_left).offset(30/HScale);
             make.top.equalTo(self.label1.mas_bottom).offset(30/HScale);
         }];
+        if (UI_IS_IPHONE5) {
+            
+            [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(300/WScale, 75/HScale));
+                make.left.equalTo(self.view.mas_left).offset(30/HScale);
+                make.top.equalTo(self.label1.mas_bottom).offset(30/HScale);
+            }];
+        }else{
+            [_label2 mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
+                make.left.equalTo(self.view.mas_left).offset(30/HScale);
+                make.top.equalTo(self.label1.mas_bottom).offset(30/HScale);
+            }];
+        }
     }
     return _label2;
 }
@@ -133,6 +147,20 @@
             make.left.equalTo(self.view.mas_left).offset(30/HScale);
             make.top.equalTo(self.label2.mas_bottom).offset(30/HScale);
         }];
+        if (UI_IS_IPHONE5) {
+            
+            [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(300/WScale, 65/HScale));
+                make.left.equalTo(self.view.mas_left).offset(30/HScale);
+                make.top.equalTo(self.label2.mas_bottom).offset(30/HScale);
+            }];
+        }else{
+            [_label3 mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(300/WScale, 45/HScale));
+                make.left.equalTo(self.view.mas_left).offset(30/HScale);
+                make.top.equalTo(self.label2.mas_bottom).offset(30/HScale);
+            }];
+        }
     }
     return _label3;
 }

@@ -171,4 +171,22 @@
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" = "(Distanța (în metri) pentru ca robotul să atingă a treia zonă)";
 
-
+"English" = "Engleză";
+"German" =  "Germană";
+"Danish" = "Daneză";
+"Czech" = "Cehă";
+"Slovak" = "Slovacă";
+"Polish" = "Poloneză";
+"Hungarian" = "Maghiară";
+"Russian" =  "Rusă";
+"French" = "Franceză";
+"Bulgarian" = "Bulgară";
+"Suomi" = "Finlandeză";
+"Dutch" = "Olandeză";
+"Lithuanian" = "Lituaniană";
+"Romanian" =  "Română";
+"Norwegian" = "Norvegiană";
+"Portuguese" = "Portugheză";
+"Swedish" = "Suedeză";
+"Spanish" = "Spaniolă";
+"Italian" = "Italiană";

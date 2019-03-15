@@ -171,3 +171,22 @@
 "Area3_Dis : ____ m" = "Area3_Dis : ____ m";
 "(The distance (in meters) that the robot needs to reach the third area)" ="(Atstumas (metrais), kurio robotui reikia, norint pasiekti Aplinką 3)";
 
+"English" = "Anglų";
+"German" = "Vokiečių";
+"Danish" = "Danų";
+"Czech" = "Čekų";
+"Sloan" = "Slovakų";
+"Polish" = "Lenkų";
+"Hungarian" = "Vengrų";
+"Russian" = "Rusų";
+"French" = "Prancūzų";
+"Bulgarian" = "Bulgarų";
+"Finnish" = "Suomių";
+"Dutch" = "Olandų";
+"Lithuanian" = "Lietuvių";
+"Romanian" = "Romėnų";
+"Norwegian" = "Norvegų";
+"Portuguese" = "Portugalų";
+"Swedish" = "Švedų";
+"Spanish" = "Ispanų";
+"Italian" = "Italų";
