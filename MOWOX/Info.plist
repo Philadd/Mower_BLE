@@ -43,12 +43,6 @@
 	<string>摄像头权限</string>
 	<key>NSContactsUsageDescription</key>
 	<string>通讯录权限</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>健康权限</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>健康权限</string>
-	<key>NSHomeKitUsageDescription</key>
-	<string></string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>地理位置权限</string>
 	<key>NSLocationUsageDescription</key>

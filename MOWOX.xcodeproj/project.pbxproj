@@ -14,6 +14,7 @@
 		36013BFD21BE860A00358D86 /* DY02243_20181210.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013BFC21BE860A00358D86 /* DY02243_20181210.bin */; };
 		36013C0121BE9DDF00358D86 /* DY1212.bin in Resources */ = {isa = PBXBuildFile; fileRef = 36013C0021BE9DDF00358D86 /* DY1212.bin */; };
 		36067D9321BF5CEB00FB6865 /* updateFirmwareTip0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36067D9221BF5CEB00FB6865 /* updateFirmwareTip0@2x.png */; };
+		360BD2F2223B5EB300D82185 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F25431FB98FFC00E79C23 /* Asset.xcassets */; };
 		36FEB52F21EF2397007618A5 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FEB52E21EF2397007618A5 /* LaunchImage@2x.png */; };
 		3E0D5ED81FDE1D1A0035857F /* WorktimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0D5ED71FDE1D1A0035857F /* WorktimeCell.m */; };
 		3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E11A37D1FD90AAD000CAA08 /* 120@3x.png */; };
@@ -61,7 +62,6 @@
 		3E2F25321FB946EF00E79C23 /* Pinsetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252E1FB946EE00E79C23 /* Pinsetting@2x.png */; };
 		3E2F25331FB946EF00E79C23 /* WorkingtimeSetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F252F1FB946EE00E79C23 /* WorkingtimeSetting@2x.png */; };
 		3E2F25351FB949C200E79C23 /* findBluetooth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F25341FB949C200E79C23 /* findBluetooth@2x.png */; };
-		3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2F25431FB98FFC00E79C23 /* Asset.xcassets */; };
 		3E3561FF1FB4560E00135503 /* 返回绿色@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FD1FB4560D00135503 /* 返回绿色@1x.png */; };
 		3E3562001FB4560E00135503 /* bluetoothImage@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3561FE1FB4560D00135503 /* bluetoothImage@1x.png */; };
 		3E3613FB1FF490D6003BA11B /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3613FA1FF490D6003BA11B /* ProgressView.m */; };
@@ -1229,7 +1229,6 @@
 				BBB611252019B111007FA3D4 /* 120x120@2x.png in Resources */,
 				3E1480511FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png in Resources */,
 				BBCCA4602019C71F00423650 /* LaunchImage1_5.5@2x.png in Resources */,
-				3E2F25441FB98FFC00E79C23 /* Asset.xcassets in Resources */,
 				3EE3DC481FA8B2BE0049B8F7 /* 右转@2x.png in Resources */,
 				BB479EFA208D6F9200B19D6A /* 180*180@3x.png in Resources */,
 				3E11A3881FD90AAD000CAA08 /* 40@2x.png in Resources */,
@@ -1292,6 +1291,7 @@
 				3E2454271FBD224E00095FBE /* 割草机@3x.png in Resources */,
 				3E11A38C1FD90AAD000CAA08 /* 87@3x.png in Resources */,
 				36013BF221BE127600358D86 /* DY12243_20181210.bin in Resources */,
+				360BD2F2223B5EB300D82185 /* Asset.xcassets in Resources */,
 				3E11A3851FD90AAD000CAA08 /* 120@3x.png in Resources */,
 				3E1480811FD00C0700FA8A2D /* A3@2x.png in Resources */,
 				3EF771A71FAAA38A00EC016A /* down@1x.png in Resources */,
@@ -1676,6 +1676,7 @@
 			baseConfigurationReference = 81D0F6572EC09A565F67D3F8 /* Pods-MOWOX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1734,6 +1735,7 @@
 			baseConfigurationReference = 1F864A63560DCE59776D4952 /* Pods-MOWOX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1846,6 +1848,7 @@
 			baseConfigurationReference = 41AF602D45B7AE4EE6CB78D8 /* Pods-MOWOX.provisioning profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
