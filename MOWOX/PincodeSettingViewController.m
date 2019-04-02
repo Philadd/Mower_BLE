@@ -48,14 +48,19 @@
 {
     [super viewWillAppear:animated];
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(keyboardWillShow:)
-//                                                 name:UIKeyboardWillShowNotification
-//                                               object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(keyboardWillHide:)
-//                                                 name:UIKeyboardWillHideNotification
-//                                               object:nil];
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x0c];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -93,6 +98,9 @@
     [_inputOldPinCodeTextField setTextFieldStyle1];
     [_inputNewPinCodeTextField setTextFieldStyle1];
     [_repeatNewPinCodeTextField setTextFieldStyle1];
+    _inputOldPinCodeTextField.delegate = self;
+    _inputNewPinCodeTextField.delegate = self;
+    _repeatNewPinCodeTextField.delegate = self;
     
     _okButton = [UIButton buttonWithTitle:LocalString(@"OK") titleColor:[UIColor blackColor]];
     [_okButton setButtonStyle1];
@@ -167,6 +175,31 @@
 {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    //简化版的只能输入1234
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        if (((textField == self.inputOldPinCodeTextField)|| (textField == self.inputNewPinCodeTextField) ||(textField == self.repeatNewPinCodeTextField)) && range.location > 3) {
+            return NO;
+        }
+        NSCharacterSet *cs;
+        if((textField == self.inputOldPinCodeTextField)|| (textField == self.inputNewPinCodeTextField) ||(textField == self.repeatNewPinCodeTextField)) {
+            cs = [[NSCharacterSet characterSetWithCharactersInString:@"1234"] invertedSet];
+            NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+            BOOL basicTest = [string isEqualToString:filtered];
+            if(!basicTest)  {
+                [NSObject showHudTipStr:LocalString(@"Please enter a number from 1 to 4")];
+                return NO;
+            }
+        }
+        return YES;
+        
+    }else{
+        return YES;
+    }
+    
 }
 
 //-(void)keyboardWillShow:(NSNotification *)notification{

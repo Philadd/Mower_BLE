@@ -11,7 +11,7 @@
 @implementation batteryButton
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect{
-    return CGRectMake(contentRect.size.width * 0.182, (contentRect.size.height - 20) / 2, contentRect.size.width * 0.25, 20);
+    return CGRectMake(contentRect.size.width * 0.38, (contentRect.size.height - 20) / 2, contentRect.size.width * 0.25, 20);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect{

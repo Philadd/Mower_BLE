@@ -61,7 +61,7 @@
 "NO" = "NEJ";
 "Boundary cut" = "Grænseklip";
 "Input old PIN code" = "Indtast gammel PIN-kode";
-"Input new PIN code" = "Indtast gammel PIN-kode";
+"Input new PIN code" = "Indtast ny PIN-kode";
 "Repeat new PIN code" = "Gentag ny PIN-kode";
 "4 numbers" = "4 tal";
 "Your robot's firmware version:" = "Din robots firmware-version:";
@@ -190,3 +190,4 @@
 "Swedish" = "Svensk";
 "Spanish" = "Spansk";
 "Italian" = "Italiensk";
+"Please enter a number from 1 to 4" = "Indtast venligst et nummer fra 1 til 4";

@@ -33,7 +33,7 @@
 
 @implementation SettingViewController
 
-static int version = 246;
+static int version = 243;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +43,7 @@ static int version = 246;
     self.bluetoothDataManage = [BluetoothDataManage shareInstance];
     
     [self viewLayoutSet];
-    if ([BluetoothDataManage shareInstance].versionupdate >= version) {
+    if ([BluetoothDataManage shareInstance].versionupdate > version) {
         _updateButton.hidden = YES;
     }else{
         _updateButton.hidden = NO;

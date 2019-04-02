@@ -118,7 +118,7 @@
         }else{
             self.signalButton = [UIButton signalButton:LocalString(@"Wi-Fi connected") signalImage:[UIImage imageNamed:@"img_wifi"]];
             [_signalButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
-            self.batteryButton = [UIButton batteryButton:LocalString(@"100%") batteryImage:[UIImage imageNamed:@"电量5-2"]];
+            self.batteryButton = [UIButton batteryButton:LocalString(@"") batteryImage:[UIImage imageNamed:@"电量5-2"]];
         }
     }else{
         if (_appDelegate.currentPeripheral == nil) {
@@ -132,7 +132,7 @@
             //[self.signalButton setTitle:LocalString(@"Bluetooth connected") forState:UIControlStateNormal];
             self.signalButton = [UIButton signalButton:LocalString(@"Bluetooth connected") signalImage:[UIImage imageNamed:@"蓝牙连接"]];
             [_signalButton.layer setBackgroundColor:[UIColor colorWithHexString:@"7DA86D"].CGColor];
-            self.batteryButton = [UIButton batteryButton:LocalString(@"100%") batteryImage:[UIImage imageNamed:@"电量5-2"]];
+            self.batteryButton = [UIButton batteryButton:LocalString(@"") batteryImage:[UIImage imageNamed:@"电量5-2"]];
         }
     }
     
