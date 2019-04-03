@@ -257,7 +257,7 @@
     //电量设置
     NSNumber *batterData = dict[@"batterData"];
     dispatch_async(dispatch_get_main_queue(), ^{
-        [_batteryButton setTitle:[NSString stringWithFormat:@"%ld%%",(long)batterData.integerValue] forState:UIControlStateNormal];
+        //[_batteryButton setTitle:[NSString stringWithFormat:@"%ld%%",(long)batterData.integerValue] forState:UIControlStateNormal];
         if (batterData.integerValue <= 20) {
             
             [_batteryButton setImage:[UIImage imageNamed:@"电量1-2"] forState:UIControlStateNormal];

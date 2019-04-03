@@ -126,7 +126,7 @@
 "Change password" = "Skift adgangskode";
 "6-12 characters or numbers" = "6-12 tegn eller tal";
 "Input Old Password" = "Indtast gammel adgangskode";
-"Input New Password" = "Indtast ny adgangskode";
+"Input new PIN code" = "Indtast ny adgangskode";
 "Repeat New Password" = "Gentag ny adgangskode";
 "nodevice" = "Ingen enhed";
 "Connection succeeded!"="Forbindelse oprettet!";
