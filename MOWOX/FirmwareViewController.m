@@ -28,6 +28,7 @@
 @implementation FirmwareViewController
 {
     NSString *dataName;
+    UIView *background;
 }
 
 - (void)viewDidLoad {
@@ -93,6 +94,11 @@
     [BluetoothDataManage shareInstance].progress_num = 0;
     
     [self.progressViewNew showPopUpViewAnimated:YES];
+    //点击图片放大
+    _tipImage.userInteractionEnabled = YES;
+    //添加点击手势
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction)];
+    [_tipImage addGestureRecognizer:tapGesture];
 
 }
 
@@ -227,6 +233,56 @@
         make.centerX.equalTo(self.view.mas_centerX);
         make.centerY.equalTo(self.view.mas_centerY);
     }];
+}
+#pragma mark - 实现点击图片放大功能
+//点击图片后的方法(即图片的放大全屏效果)
+- (void) tapAction{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //创建一个黑色背景
+    //初始化一个用来当做背景的View。
+    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    background = bgView;
+    [bgView setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:bgView];
+    
+    //创建显示图像的视图
+    //初始化要显示的图片内容的imageView
+    UIImageView *imgView = [[UIImageView alloc] init];
+    
+    //根据设备类型显示相应图片
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        //要显示的图片，即要放大的图片
+        [imgView setImage:[UIImage imageNamed:@"updateFirmwareTip0"]];
+    }else{
+        [imgView setImage:[UIImage imageNamed:@"updateFirmwareTip"]];
+    }
+    [bgView addSubview:imgView];
+    [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenHeight,ScreenWidth));
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY);
+    }];
+    imgView.transform=CGAffineTransformMakeRotation(M_PI_2);
+    imgView.userInteractionEnabled = YES;
+    //添加点击手势（即点击图片后退出全屏）
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeView)];
+    [imgView addGestureRecognizer:tapGesture];
+    
+    [self shakeToShow:bgView];//放大过程中的动画
+}
+-(void)closeView{
+    [background removeFromSuperview];
+    [self.navigationController setNavigationBarHidden:NO animated:nil];
+}
+//放大过程中出现的缓慢动画
+- (void) shakeToShow:(UIView*)aView{
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 0.5;
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 0.1)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    animation.values = values;
+    [aView.layer addAnimation:animation forKey:nil];
 }
 
 #pragma mark - progress view
