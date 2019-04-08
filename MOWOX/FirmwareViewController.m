@@ -23,19 +23,19 @@
 @property (strong, nonatomic)  UIActivityIndicatorView *activityIndicatorView;
 @property (strong, nonatomic)  ASProgressPopUpView *progressViewNew;
 @property (nonatomic) int packgeNum;
-@property (nonatomic) int flag;//1是放大0是变小
 @end
 
 @implementation FirmwareViewController
 {
     NSString *dataName;
+    UIView *background;
+    UIImageView *imgView;//创建显示图像的视图
     CGRect oldFrame;    //保存图片原来的大小
     CGRect largeFrame;  //确定图片放大最大的程度
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _flag = 1;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults integerForKey:@"deviceType"]) {
         [BluetoothDataManage shareInstance].deviceType = (int)[defaults integerForKey:@"deviceType"];
@@ -102,25 +102,11 @@
     UITapGestureRecognizer *SingleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetImage:)];
     SingleTapGesture.numberOfTapsRequired = 1;//tap次数
     [self.view addGestureRecognizer:SingleTapGesture];
-    // 双击
-    UITapGestureRecognizer *doubleTapGesture;
-    doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTapFrom)];
-    doubleTapGesture.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:doubleTapGesture];
-    // 关键在这一行，如果双击确定偵測失败才會触发单击
-    [SingleTapGesture requireGestureRecognizerToFail:doubleTapGesture];
-    
-    
-    [self addGestureRecognizerToView:_tipImage];
     //如果处理的是图片，别忘了
-    [_tipImage setUserInteractionEnabled:YES];
-    [_tipImage setMultipleTouchEnabled:YES];
-    
+    _tipImage.userInteractionEnabled = YES;
+    _tipImage.multipleTouchEnabled = YES;
     oldFrame = _tipImage.frame;
     largeFrame = CGRectMake(ScreenWidth,ScreenHeight, 3 * oldFrame.size.width, 3 * oldFrame.size.height);
-    [self addGestureRecognizerToView:_tipImage];
-    [self.view addSubview:_tipImage];
-    _tipImage.userInteractionEnabled = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -156,34 +142,52 @@
 //单击实现原来大小
 - (void)resetImage:(UITapGestureRecognizer *)recognizer
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.2];
-    // 恒等变换. beginAnimation 和 commitAnimation 间的操作为动画过程
-    _tipImage.transform = CGAffineTransformIdentity;
-    [_tipImage setCenter:CGPointMake(self.view.frame.size.height/3.5, self.view.frame.size.width/1.22)];
-    [UIView commitAnimations];
+    [self.navigationController setNavigationBarHidden:YES animated:nil];
+    //创建一个黑色背景
+    //初始化一个用来当做背景的View。
+    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    background = bgView;
+    [bgView setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:bgView];
+    self->imgView = [[UIImageView alloc] init];
+    
+    //根据设备类型显示相应图片
+    if ([BluetoothDataManage shareInstance].deviceType == 0) {
+        //要显示的图片，即要放大的图片
+        [imgView setImage:[UIImage imageNamed:@"updateFirmwareTip0"]];
+    }else{
+        [imgView setImage:[UIImage imageNamed:@"updateFirmwareTip"]];
+    }
+    [bgView addSubview:imgView];
+    [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(ScreenHeight,ScreenWidth));
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY);
+    }];
+    imgView.transform=CGAffineTransformMakeRotation(M_PI_2);
+    imgView.userInteractionEnabled = YES;
+    //添加点击手势（即点击图片后退出全屏）
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeView)];
+    [imgView addGestureRecognizer:tapGesture];
+    
+    [self shakeToShow:bgView];//放大过程中的动画
+    [self addGestureRecognizerToView:imgView];
 }
 
-//双击实现放大和缩小一倍
-- (void) handleDoubleTapFrom {
-    if (_flag == 1) {
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.2];
-        
-        [_tipImage setFrame:CGRectMake(_tipImage.frame.origin.x -_tipImage.frame.size.width / 2,_tipImage.frame.origin.y - _tipImage.frame.size.height / 2,2 * _tipImage.frame.size.width,2 * _tipImage.frame.size.height)];
-        [UIView commitAnimations];
-        _flag = 0;
-    }
-    else {
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.2];
-        [_tipImage setFrame:CGRectMake(_tipImage.frame.origin.x +_tipImage.frame.size.width/4, _tipImage.frame.origin.y + _tipImage.frame.size.height/4, _tipImage.frame.size.width/2, _tipImage.frame.size.height/2)];
-        [UIView commitAnimations];
-        _flag = 1;
-    }
+-(void)closeView{
+    [background removeFromSuperview];
+    [self.navigationController setNavigationBarHidden:NO animated:nil];
 }
-
-
+//放大过程中出现的缓慢动画
+- (void) shakeToShow:(UIView*)aView{
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 0.5;
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 0.1)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    animation.values = values;
+    [aView.layer addAnimation:animation forKey:nil];
+}
 - (void)viewLayoutSet{
     UIImage *image = [UIImage imageNamed:@"返回1"];
     [self addLeftBarButtonWithImage:image action:@selector(backAction)];
