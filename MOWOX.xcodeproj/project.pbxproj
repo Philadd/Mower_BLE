@@ -202,8 +202,8 @@
 		BBB6112C2019B1F3007FA3D4 /* 120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */; };
 		BBC4AB802102D8C100F49BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */; };
 		BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA4592019B84C00423650 /* 80x80@2x.png */; };
-		BBCCA4602019C71F00423650 /* BluetoothWelcome1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* BluetoothWelcome1_5.5@2x.png */; };
-		BBCCA4612019C71F00423650 /* BluetoothWelcome1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* BluetoothWelcome1_4.7@2x.png */; };
+		BBCCA4602019C71F00423650 /* BluetoothWe1_5.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45E2019C71F00423650 /* BluetoothWe1_5.5@2x.png */; };
+		BBCCA4612019C71F00423650 /* BluetoothWel1_4.7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCA45F2019C71F00423650 /* BluetoothWel1_4.7@2x.png */; };
 		BBFD38902079ACB500D02ACD /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFD388F2079ACB500D02ACD /* UIViewController+BarButton.m */; };
 /* End PBXBuildFile section */
 
@@ -545,10 +545,9 @@
 		BBC4AB722102D42300F49BDC /* 60X60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60X60.png; sourceTree = "<group>"; };
 		BBC4AB732102D42400F49BDC /* 40X40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40X40.png; sourceTree = "<group>"; };
 		BBC4AB812102D9FC00F49BDC /* AssetRobot.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetRobot.xcassets; sourceTree = "<group>"; };
-		BBC4AB8321030F5E00F49BDC /* LaunchScreenRobot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenRobot.storyboard; sourceTree = "<group>"; };
 		BBCCA4592019B84C00423650 /* 80x80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80x80@2x.png"; sourceTree = "<group>"; };
-		BBCCA45E2019C71F00423650 /* BluetoothWelcome1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BluetoothWelcome1_5.5@2x.png"; sourceTree = "<group>"; };
-		BBCCA45F2019C71F00423650 /* BluetoothWelcome1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BluetoothWelcome1_4.7@2x.png"; sourceTree = "<group>"; };
+		BBCCA45E2019C71F00423650 /* BluetoothWe1_5.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BluetoothWe1_5.5@2x.png"; sourceTree = "<group>"; };
+		BBCCA45F2019C71F00423650 /* BluetoothWel1_4.7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BluetoothWel1_4.7@2x.png"; sourceTree = "<group>"; };
 		BBCD5967215F548300D87D31 /* MOWOXROBOT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOXROBOT.entitlements; sourceTree = "<group>"; };
 		BBCD5968215F55C600D87D31 /* MOWOX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MOWOX.entitlements; sourceTree = "<group>"; };
 		BBFD388E2079ACB500D02ACD /* UIViewController+BarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
@@ -609,6 +608,8 @@
 				BB513EEC2140C7A9000D2A5E /* wifi_img */,
 				BB5C49CA207D9B28007B2508 /* updateFirmwareTip@2x.png */,
 				36067D9221BF5CEB00FB6865 /* updateFirmwareTip0@2x.png */,
+				BBCCA45F2019C71F00423650 /* BluetoothWel1_4.7@2x.png */,
+				BBCCA45E2019C71F00423650 /* BluetoothWe1_5.5@2x.png */,
 				BBB611182019B111007FA3D4 /* icon1 */,
 				3E11A37C1FD90AAD000CAA08 /* icon */,
 				3E14807D1FD00C0700FA8A2D /* A2@2x.png */,
@@ -772,7 +773,6 @@
 				3E63252E1FA6BC5F00F14462 /* Main.storyboard */,
 				3E2F25431FB98FFC00E79C23 /* Asset.xcassets */,
 				3E6325331FA6BC5F00F14462 /* LaunchScreen.storyboard */,
-				BBC4AB8321030F5E00F49BDC /* LaunchScreenRobot.storyboard */,
 				BB1299302021A79500285201 /* Localizable.strings */,
 				3E6325361FA6BC5F00F14462 /* Info.plist */,
 				3E6325251FA6BC5F00F14462 /* Supporting Files */,
@@ -1108,8 +1108,6 @@
 			isa = PBXGroup;
 			children = (
 				BB479EE8208D6F9200B19D6A /* new */,
-				BBCCA45F2019C71F00423650 /* BluetoothWelcome1_4.7@2x.png */,
-				BBCCA45E2019C71F00423650 /* BluetoothWelcome1_5.5@2x.png */,
 				BBCCA4592019B84C00423650 /* 80x80@2x.png */,
 				BBB611292019B1F3007FA3D4 /* 60x60@2x.png */,
 				BBB6112A2019B1F3007FA3D4 /* 120x120@3x.png */,
@@ -1228,7 +1226,7 @@
 				3E11A3861FD90AAD000CAA08 /* icon-150@3x.png in Resources */,
 				BBB611252019B111007FA3D4 /* 120x120@2x.png in Resources */,
 				3E1480511FCFEF1400FA8A2D /* 机器人APP1+2(1)-3.png in Resources */,
-				BBCCA4602019C71F00423650 /* BluetoothWelcome1_5.5@2x.png in Resources */,
+				BBCCA4602019C71F00423650 /* BluetoothWe1_5.5@2x.png in Resources */,
 				3EE3DC481FA8B2BE0049B8F7 /* 右转@2x.png in Resources */,
 				BB479EFA208D6F9200B19D6A /* 180*180@3x.png in Resources */,
 				3E11A3881FD90AAD000CAA08 /* 40@2x.png in Resources */,
@@ -1267,7 +1265,7 @@
 				3E5815C01FAFF72300E93520 /* WorkingtimeSetting@1x.png in Resources */,
 				BBCCA45B2019B84C00423650 /* 80x80@2x.png in Resources */,
 				3EA7AE061FB14B87001FB406 /* backgroundro@1x.png in Resources */,
-				BBCCA4612019C71F00423650 /* BluetoothWelcome1_4.7@2x.png in Resources */,
+				BBCCA4612019C71F00423650 /* BluetoothWel1_4.7@2x.png in Resources */,
 				3EA7AE051FB14B87001FB406 /* backgroundco@2x.png in Resources */,
 				3EF771A91FAAA38A00EC016A /* left@1x.png in Resources */,
 				36013BF721BE169500358D86 /* DY00243_20181210.bin in Resources */,
@@ -1676,7 +1674,7 @@
 			baseConfigurationReference = 81D0F6572EC09A565F67D3F8 /* Pods-MOWOX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1735,7 +1733,7 @@
 			baseConfigurationReference = 1F864A63560DCE59776D4952 /* Pods-MOWOX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1848,7 +1846,7 @@
 			baseConfigurationReference = 41AF602D45B7AE4EE6CB78D8 /* Pods-MOWOX.provisioning profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MOWOX/MOWOX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
