@@ -102,7 +102,7 @@
         _label2.textColor = [UIColor blackColor];
         _label2.textAlignment = NSTextAlignmentLeft;
         [self.view addSubview:_label2];
-        _label2.text = LocalString(@"App software version: V0.2.1 for iOS");
+        _label2.text = LocalString(@"App software version: V0.2.2 for iOS");
         //自动折行设置
         [_label2 setLineBreakMode:NSLineBreakByWordWrapping];
         _label2.numberOfLines = 0;
