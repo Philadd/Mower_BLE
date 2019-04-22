@@ -67,6 +67,19 @@
     [self.connButton addTarget:self action:@selector(showConnView) forControlEvents:UIControlEventTouchUpInside];
     //[self.changeButton addTarget:self action:@selector(changeConnWay) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    NSMutableArray *dataContent = [[NSMutableArray alloc] init];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    [dataContent addObject:[NSNumber numberWithUnsignedInteger:0x00]];
+    
+    [self.bluetoothDataManage setDataType:0x0c];
+    [self.bluetoothDataManage setDataContent: dataContent];
+    [self.bluetoothDataManage sendBluetoothFrame];
 
     
 }

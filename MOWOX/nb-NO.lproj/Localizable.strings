@@ -151,7 +151,7 @@
 
 "Device Connection Successful" = "Enhet tilkoblet";
 "Secondary area setting" ="Innstilling for sekundært område";
-"App software version: V0.2.2 for iOS" = "Apps programvareversjon: V0.2.2 for iOS";
+"App software version:" = "Apps programvareversjon:";
 "Robot software version" = "Robots programvareversjon";
 "Data sent successfully" = "Data er sendt";
 "Data transmission failed" = "Dataoverføring var mislykket";

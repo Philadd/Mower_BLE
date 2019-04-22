@@ -144,7 +144,7 @@
 
 "Device Connection Successful" = "Eszköz csatlakoztatása sikeres";
 "Secondary area setting" ="Másodlagos terület beállítása";
-"App software version: V0.2.2 for iOS" = "Az alkalmazás szoftververziója: V0.2.2 for iOS";
+"App software version:" = "Az alkalmazás szoftververziója:";
 "Robot software version" = "A robot szoftververziója";
 "Data sent successfully" = "Adatküldés sikeres";
 "Data transmission failed" = "Adatátvitel sikertelen";

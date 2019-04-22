@@ -151,7 +151,7 @@
 
 "Device Connection Successful" = "Device Connection Successful";
 "Secondary area setting" ="Secondary area setting";
-"App software version: V0.2.2 for iOS" = "App software version: V0.2.2 for iOS";
+"App software version:" = "App software version:";
 "Robot software version" = "Robot software version";
 "Data sent successfully" = "Data sent successfully";
 "Data transmission failed" = "Data transmission failed";

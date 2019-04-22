@@ -151,7 +151,7 @@
 
 "Device Connection Successful" = "Устройството е свързано";
 "Secondary area setting" ="Настройки за втора зона";
-"App software version: V0.2.2 for iOS" = "Софт. версия на прилож: V0.2.2 for iOS";
+"App software version:" = "Софт. версия на прилож:";
 "Robot software version" = "Софт. версия на робота";
 "Data sent successfully" = "Успешно изпратено";
 "Data transmission failed" = "Неуспешно изпращане";
